@@ -18,4 +18,11 @@ describe("Frame", function() {
       expect(frame._MAX_PINS).toEqual(10);
     });
   });
+
+  describe("addRoll", function() {
+    it("should add the amount of pins knocked down for every roll", function() {
+      frame.addRoll(5);
+      expect(frame.rolls).toContain(5)
+    });
+  });
 });
