@@ -16,4 +16,11 @@ describe('Features', function() {
       expect(game.frames).toContain(frame);
     });
   });
+
+  describe("Basic Roll", function() {
+    it("should add amount of pins to the current frame's rolls array", function() {
+      game.roll(5);
+      expect(game.currentFrame.rolls).toContain(5);
+    });
+  });
 });
