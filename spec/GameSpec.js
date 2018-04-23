@@ -11,5 +11,9 @@ describe("Game", function() {
     it("should have a frames array that starts as empty", function() {
       expect(game.frames).toEqual([]);
     });
+
+    it("should have a maximum of 10 frames", function() {
+      expect(game._MAX_FRAMES).toEqual(10);
+    });
   });
 });

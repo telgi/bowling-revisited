@@ -19,7 +19,7 @@ Run `open SpecRunner.html` to launch Jasmine test suite
 
 ### Basic Game (with no spares or strikes)
 
-* There are 10 frames in a game []
+* There are 10 frames in a game [X]
 * There are 10 pins to knock down in every frame []
 * There are 2 rolls for every frame in which to knock down all 10 pins []
 * The score of each frame is equal to the amount of pins knocked down []
