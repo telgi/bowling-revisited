@@ -9,5 +9,9 @@ describe("Frame", function() {
     it("should have a rolls array that starts as empty", function() {
       expect(frame.rolls).toEqual([]);
     });
+
+    it("should have a maximum of 10 pins to knock down", function() {
+      expect(frame._MAX_PINS).toEqual(10);
+    });
   });
 });
