@@ -8,10 +8,6 @@ describe("Game", function() {
   })
 
   describe("When first created", function() {
-    it("should have a frames array that starts as empty", function() {
-      expect(game.frames).toEqual([]);
-    });
-
     it("should have a frame index that starts at 1", function() {
       expect(game.frameIndex).toEqual(1);
     });
