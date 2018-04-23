@@ -19,7 +19,7 @@ describe("Frame", function() {
     });
   });
 
-  describe("Roll", function() {
+  describe("When 1st roll is not a strike", function() {
     beforeEach(function() {
       frame.roll(5);
     });
