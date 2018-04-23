@@ -10,6 +10,10 @@ describe("Frame", function() {
       expect(frame.rolls).toEqual([]);
     });
 
+    it("should have a roll index that starts at 1", function() {
+      expect(frame.rollIndex).toEqual(1);
+    });
+
     it("should have a maximum of 10 pins to knock down", function() {
       expect(frame._MAX_PINS).toEqual(10);
     });
