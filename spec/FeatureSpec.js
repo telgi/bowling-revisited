@@ -18,9 +18,16 @@ describe('Features', function() {
   });
 
   describe("Basic Roll", function() {
-    it("should add amount of pins to the current frame's rolls array", function() {
+    beforeEach(function() {
       game.roll(5);
+    });
+
+    it("should add amount of pins to the current frame's rolls array", function() {
       expect(game.currentFrame.rolls).toContain(5);
+    });
+
+    it("should increment the roll index by 1", function() {
+      expect(game.currentFrame.rollIndex).toEqual(2);
     });
   });
 });

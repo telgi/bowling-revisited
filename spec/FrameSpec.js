@@ -19,10 +19,17 @@ describe("Frame", function() {
     });
   });
 
-  describe("addRoll", function() {
+  describe("Roll", function() {
+    beforeEach(function() {
+      frame.roll(5);
+    });
+
     it("should add the amount of pins knocked down for every roll", function() {
-      frame.addRoll(5);
       expect(frame.rolls).toContain(5)
+    });
+
+    it("should increment the roll index by 1", function() {
+      expect(frame.rollIndex).toEqual(2);
     });
   });
 });

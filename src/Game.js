@@ -7,7 +7,7 @@ function Game() {
 }
 
 Game.prototype.roll = function (pins) {
-  this.currentFrame.rolls.push(pins);
+  this.currentFrame.roll(pins)
 };
 
 Game.prototype.addFrame = function () {
